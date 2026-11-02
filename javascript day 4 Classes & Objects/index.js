@@ -1,16 +1,27 @@
 // console.log("hello world");
 
-const Obj = {
-  fullName: "Bilal",
-  age: 19,
+// const Obj = {
+//   fullName: "Bilal",
+//   age: 19,
+
+//   // printage (){
+//   //   console.log("age = " , this.age);
+//   // }
+
+//   printage: function () {
+//     console.log("age = ", this.age);
+//   },
+// };
+
+const user = {
+  fullName: "bilal",
+
+  greet: function () {
+    console.log("Hello bilal");
+  },
 };
 
-
-
-
-
-
-
+user.greet();
 
 // console outputs
 
