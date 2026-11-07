@@ -1,38 +1,32 @@
 // console.log("hello world");
 
-const Obj = {
-  fullName: "Bilal",
-  age: 19,
-
-  printTax1 (){
-    console.log("age = " , this.age);
-  },
-  
-  printTax2: function () {
-    console.log("age = ", this.age);
+// Defining a function inside an object
+const employee = {
+  caluTax() {
+    console.log("Tax rate is 10%");
   },
 };
 
+const karanArjun = {
+  salary: 50000,
+};
 
+const amir = {
+  salary: 50000,
+};
 
+const anwar = {
+  salary: 50000,
+};
 
+const kabir = {
+  salary: 50000,
+};
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+karanArjun.__proto__ = employee;
+amir.__proto__ = employee;
+anwar.__proto__ = employee;
+kabir.__proto__ = employee;
 
 // console outputs
 
@@ -46,8 +40,6 @@ const Obj = {
 // undefined
 // Obj.toString
 // ƒ toString() { [native code] }
-
-
 
 // let arr = ["apple", "mango", "banana"]
 // undefined
