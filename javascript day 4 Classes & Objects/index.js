@@ -1,67 +1,73 @@
 // Objects
 
 // Defining a function inside an object
-// const para1 = document.getElementById("para1");
-// const para2 = document.getElementById("para2");
+const para1 = document.getElementById("para1");
+const para2 = document.getElementById("para2");
+const para3 = document.getElementById("para3");
 
-// const employee = {
-//   caluTax() {
-//     console.log("Tax rate is 10%");
-//   },
-// };
 
-// const karanArjun = {
-//   salary: 50000,
-// };
+const employee = {
+  caluTax() {
+    console.log("Tax rate is 10%");
+  },
 
-// const amir = {
-//   salary: 30000,
-//   caluTax() {
-//     console.log("Tax rate is 10%");
-//   },
-// };
+  //  caluTax : function(){
 
-// const anwar = {
-//   salary: 40000,
-// };
+  // }
+};
 
-// const kabir = {
-//   salary: 80000,
-// };
+const karanArjun = {
+  salary: 50000,
+};
 
-// karanArjun.__proto__ = employee;
-// amir.__proto__ = employee;
-// anwar.__proto__ = employee;
-// kabir.__proto__ = employee;
+const amir = {
+  salary: 30000,
+  caluTax() {
+    console.log("Tax rate is 10%");
+  },
+};
 
-// console.log(kabir, anwar, karanArjun, amir);
+const anwar = {
+  salary: 40000,
+};
 
-// para1.textContent = `Kabir salary is: ${kabir.salary}`;
-// para2.textContent = `Amir salary is: ${amir.salary}`;
+const kabir = {
+  salary: 80000,
+};
 
-// const box = document.querySelector("#box");
+karanArjun.__proto__ = employee;
+amir.__proto__ = employee;
+anwar.__proto__ = employee;
+kabir.__proto__ = employee;
 
-// console.log(box.textContent);
+console.log(kabir, anwar, karanArjun, amir);
+
+para1.textContent = `kabir salary is: ${kabir.salary}`;
+para2.textContent = `amir salary is: ${amir.salary}`;
+para3.textContent = `amir salary is: ${anwar.salary}`;
+
+
+const box = document.querySelector("#box");
+
+console.log(box.textContent);
 
 // Classes
 
-class toyotaCar {
-  start() {
-    console.log("start");
-  }
+// class toyotaCar {
+//   start() {
+//     console.log("start");
+//   }
 
-  stop() {
-    console.log("stop");
-  }
-}
+//   stop() {
+//     console.log("stop");
+//   }
+// }
 
-let fortuner = new toyotaCar();
-let bmw = new toyotaCar();
+// let fortuner = new toyotaCar();
+// let bmw = new toyotaCar();
 
+// console.log(fortuner.stop);
+// console.log(fortuner.start);
 
-
-console.log(fortuner.stop);
-console.log(fortuner.start);
-
-console.log(bmw.stop);
-console.log(bmw.start);
+// console.log(bmw.stop);
+// console.log(bmw.start);
