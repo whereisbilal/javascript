@@ -52,7 +52,7 @@ const box = document.querySelector("#box");
 console.log(box.textContent);
 
 // Classes
-
+ 
 // class toyotaCar {
 //   start() {
 //     console.log("start");
